@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[UserInfoController keyboardWillHide:]:UserInfoController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.contentScrol.contentSize">
+            </PersistentString>
+            <PersistentString
+               value = "self.contentScrol.contentOffset.y">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager(Designation) designationFinished:]:HttpManager+Designation.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[request responseString]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__35-[QRCheckController viewDidAppear:]_block_invoke:QRCheckController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[QRCheckController viewWillAppear:]:QRCheckController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CheckResultController encodingBarCodeImage]:CheckResultController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager(BrandListWithBrandID) shopListWithBrandFinished:]:HttpManager+ShopListWithBrandID.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AutoDownLoadImageView removeFromSuperview]:AutoDownLoadImageView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[BLRView blurWithColor:]:BLRView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager(Register) registerNewFinished:]:HttpManager+Register.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[request responseString]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager(BrandDetail) brandDetailFinished:]:HttpManager+BrandDetail.m">
+      </ContextState>
+      <ContextState
+         contextName = "__35-[HomeController clickClassifyBtn:]_block_invoke_2:HomeController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.classifyBgView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HomeController collectionView:cellForItemAtIndexPath:]:HomeController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.list">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__32-[QRCheckController viewDidLoad]_block_invoke:QRCheckController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__51-[ShopListController searchBarSearchButtonClicked:]_block_invoke:ShopListController.m">
+      </ContextState>
+      <ContextState
+         contextName = "+[ShopDetail shopDetailWiht:]:DataModal.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[BrandDetailController reloadContentView]:BrandDetailController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.freeLab.superview">
+            </PersistentString>
+            <PersistentString
+               value = "self.horesLamp.subviews">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager(ClassifyDetail) classifyDetailFinished:]:HttpManager+ClassifyDetail.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager(UpdateUserInfo) updateUserInfoFinished:]:HttpManager+UpdateUserInfo.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[BrandDetailController countContent:]:BrandDetailController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[UserInfoController keyboardWillShow:]:UserInfoController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "notification.userInfo">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ASIHTTPRequest responseString]:ASIHTTPRequest.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self responseEncoding]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[UIImage(ImageEffects) applyBlurWithCrop:resize:blurRadius:tintColor:saturationDeltaFactor:maskImage:]:UIImage+ImageEffects.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self CGImage]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[UserInfoController adjustScrolOffset]:UserInfoController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.window">
+            </PersistentString>
+            <PersistentString
+               value = "self.contentScrol.contentOffset">
+            </PersistentString>
+            <PersistentString
+               value = "self.contentScrol.contentInset">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SearchController observeValueForKeyPath:ofObject:change:context:]:SearchController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[HomeController prepareForSegue:sender:]:HomeController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager(QRCheck) QRCheckFinished:]:HttpManager+QRCheck.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[request responseString]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[NewsListController parseNewsList:]:NewsListController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[HomeController collectionView:numberOfItemsInSection:]:HomeController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__36-[BrandDetailController viewDidLoad]_block_invoke:BrandDetailController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationItem">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[QRCheckController captureResult:result:]:QRCheckController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[HorseRaceLampView layoutSubviews]:HorseRaceLampView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[DataManager prepareMustData:]:DataManager.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[UserInfoController refreshData]:UserInfoController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[NSUserDefaults standardUserDefaults]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[NHSearchBar awakeFromNib]:NHSearchBar.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.subviews">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager getRequestWith:Modular:Operation:PostContent:Post:]:HttpManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "wsParas.allKeys">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[BrandDetail brandDetailWiht:]:DataModal.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager(SearchBrandWithWords) SearchBrandWithWordsFinished:]:HttpManager+SearchBrandWithWords.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[request responseString]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LoginController authBirthday:]:LoginController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "day &gt; 0 &amp;&amp; day &lt; 31 &amp;&amp; day &lt; nowDay">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CheckResultController reloadContentView]:CheckResultController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PicHttpManager requestFinished:]:PicHttpManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[request responseStatusMessage]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HelpController viewDidLoad]:HelpController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.guideScrollView.bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SearchController viewWillDisappear:]:SearchController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.mapTool.myLocation">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CheckResultController viewDidLoad]:CheckResultController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager(BrandList) brandListFinished:]:HttpManager+BrandList.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PicHttpManager cancelDownloadImageWith:]:PicHttpManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "request.executing">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[NHSearchBar observeValueForKeyPath:ofObject:change:context:]:NHSearchBar.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[BrandDetailController adjustContentViewFrame]:BrandDetailController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.siteLab">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[NewsDetailController reloadContentView]:NewsDetailController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PicHttpManager requestFailed:]:PicHttpManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[request error]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager(ShopDetail) shopDetailFinished:]:HttpManager+ShopDetail.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[request responseString]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[NewsListController refreshViewBeginRefreshing:]:NewsListController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__37-[HomeController reloadRecommendList]_block_invoke:HomeController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__25-[BLRView blurBackground]_block_invoke_2:BLRView.m">
+      </ContextState>
+      <ContextState
+         contextName = "__57-[AppDelegate application:didFinishLaunchingWithOptions:]_block_invoke:AppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "__36-[MapShopListController viewDidLoad]_block_invoke:MapShopListController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.mapView.myLocation.coordinate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager(RecommendList) recommendListFinished:]:HttpManager+RecommendList.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "request">
+            </PersistentString>
+            <PersistentString
+               value = "[request responseString]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SearchController clicnNearbyBtn:]:SearchController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.mapTool.myLocation">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager(Classify) classifyFinished:]:HttpManager+Classify.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[LoginController clickLoginBtn:]:LoginController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.dateInput.maskedTextField">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[DesiResualt designationWith:]:DataModal.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate application:didFinishLaunchingWithOptions:]:AppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "__36-[BrandDetailController viewDidLoad]_block_invoke30:BrandDetailController.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
