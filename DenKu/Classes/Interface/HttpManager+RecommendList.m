@@ -23,10 +23,14 @@
                            PostKey2, rankID];;
     NSString *Operation = ClassifyKey;
     NSDictionary *requsetInfo =@{PostKey1 : type,
-                                 PostKey2 : rankID}; ;
-    if ([rankID isEqualToString:@"-1"]) {
-        Operation = HomeAllList;
+          
+                                 PostKey2 : rankID};
+    if ([rankID isKindOfClass:[NSString class]]) {
+        if ([rankID isEqualToString:@"-1"]) {
+            Operation = HomeAllList;
+        }
     }
+   
     ASIFormDataRequest *request = [self getRequestWith:URL
                                                Modular:ModularKey
                                              Operation:Operation
