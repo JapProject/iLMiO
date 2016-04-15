@@ -34,19 +34,18 @@
     NHNavigationController * nav = (NHNavigationController*)viewController;
     if ([nav.topViewController isKindOfClass:[SettingListViewController class]]) {
         //如果没有登录弹出登录
-        [[DataManager shareDataManager] prepareMustData:^(){
-            if ([[DataManager shareDataManager] isNeedRegister]) {
-                [[iToast makeText:NSLocalizedString(@"未ログインの場合は使えません", nil)] show];
-                return ;
-                
-                
-            }
-        }];
-        return NO;
-    }else{
-        return YES;
+        NSData *rankData = [[NSUserDefaults standardUserDefaults] objectForKey:kUserRankID];
+        DesiResualt *rank = [NSKeyedUnarchiver unarchiveObjectWithData:rankData];
+        NSString *sex = [[NSUserDefaults standardUserDefaults] objectForKey:kUserSex];
+        if (rank.rankID.length > 0 && sex.length > 0) {
+            return YES;
+        }else{
+             [[iToast makeText:NSLocalizedString(@"未ログインの場合は使えません", nil)] show];
+            return NO;
+        }
+
     }
-    
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
