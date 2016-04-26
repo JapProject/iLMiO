@@ -89,5 +89,6 @@ return self; \
 #define STATUSBAR_WIDTH     [[UIApplication sharedApplication] statusBarFrame].size.width
 
 #define kColorWithNormalRGB(r, g, b)    [UIColor colorWithRed:(r/255.0) green:(g/255.0) blue:(b/255.0) alpha:1.0]
+#define KBrandsModel       @"KBrandsModel"
 
 #endif

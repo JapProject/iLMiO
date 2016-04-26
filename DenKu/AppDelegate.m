@@ -3,6 +3,7 @@
 #import "AppDelegate.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import "DataManager.h"
+#import "BrandsModel.h"
 
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 
@@ -138,9 +139,44 @@ void UncaughtExceptionHandler(NSException *exception)
     
     [self registerPushNotice:launchOptions];
     [self checkUpdate];
+    [self getBrandModel];
     return YES;
 }
 
+
+-(void)getBrandModel{
+    
+    
+    NSData *udObject = [[NSUserDefaults standardUserDefaults] objectForKey:KBrandsModel];
+    NSArray * modelArray = [NSKeyedUnarchiver unarchiveObjectWithData:udObject];
+    if (!modelArray) {
+        NSError *error;
+        NSURL *url = [NSURL URLWithString:@"http://catalog.livingstyle.jp/apps/iLMiO/brandMaster.json"];
+        NSURLRequest *request= [NSURLRequest requestWithURL:url];
+        NSData *response=[NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+        NSDictionary *dict=  [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableLeaves error:&error];
+        if(dict){
+            
+            NSArray * array=dict[@"brands"];
+            NSMutableArray * temprray = [NSMutableArray array];
+            for (int i=0; i<array.count; i++) {
+                NSDictionary * tempDic = array[i];
+                BrandsModel * model = [[BrandsModel alloc]init];
+                model.name = tempDic[@"name"];
+                model.InteriorPlusCode = tempDic[@"InteriorPlusCode"];
+                model.iLMioCode = tempDic[@"iLMioCode"];
+                [temprray addObject:model];
+            }
+            NSData *userObj = [NSKeyedArchiver archivedDataWithRootObject:temprray];
+            [[NSUserDefaults standardUserDefaults] setObject:userObj forKey:KBrandsModel];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            
+        }
+    }
+    
+    
+    
+}
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {
     NSString *token = [NSString stringWithFormat:@"%@", deviceToken];

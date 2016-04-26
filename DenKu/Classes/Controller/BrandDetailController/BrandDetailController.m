@@ -8,6 +8,7 @@
 #import "QRCheckController.h"
 #import "AutoTimerButton.h"
 #import "NewsDetailController.h"
+#import "BrandsModel.h"
 
 @interface UILabel (Copy)
 -(BOOL)canBecomeFirstResponder;
@@ -60,11 +61,31 @@
 @property (weak, nonatomic) IBOutlet UILabel *latestNews;
 @property (weak, nonatomic) IBOutlet UIButton *newsListButton;
 @property (weak, nonatomic) IBOutlet UIView *topLine;
+@property (weak,nonatomic) IBOutlet UIButton * BrandButton;
 
 @property (nonatomic, strong) BrandDetail *detail;
 @end
 
 @implementation BrandDetailController
+
+
+- (IBAction)detailBrand:(id)sender {
+    
+    
+    NSData *udObject = [[NSUserDefaults standardUserDefaults] objectForKey:KBrandsModel];
+    NSArray * modelArray = [NSKeyedUnarchiver unarchiveObjectWithData:udObject];
+    
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"iLMioCode == %d",[self.brandID intValue]];
+    NSArray * array = [modelArray filteredArrayUsingPredicate:predicate];
+    if (array.count !=0) {
+        BrandsModel * model = [array firstObject];
+        NSString * InteriorPlusCode = model.InteriorPlusCode;
+        NSString *urlString = [NSString stringWithFormat:@"https://dr.cir.io/ur/mJsLkA?brand_id=%@",InteriorPlusCode];
+        NSURL *url = [NSURL URLWithString:urlString];
+        [[UIApplication sharedApplication] openURL:url];
+    }
+   
+}
 
 - (IBAction)longPressGestureRecognizer:(id)sender {
     [self.bottomLab becomeFirstResponder];
@@ -120,6 +141,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSData *udObject = [[NSUserDefaults standardUserDefaults] objectForKey:KBrandsModel];
+    NSArray * modelArray = [NSKeyedUnarchiver unarchiveObjectWithData:udObject];
+    
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"iLMioCode == %d",[self.brandID intValue]];
+    NSArray * array = [modelArray filteredArrayUsingPredicate:predicate];
+    if (array.count !=0) {
+        self.BrandButton.hidden = YES;
+    }else{
+        self.BrandButton.hidden = YES;
+    }
+    
     self.horesLamp.delegate = self;
     [[DataManager shareDataManager] brandDetail:self.brandID Finished:^(BOOL result, int errCode, BrandDetail *detail){
         if (!result) {
