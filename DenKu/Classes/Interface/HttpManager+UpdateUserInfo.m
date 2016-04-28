@@ -42,11 +42,11 @@
 #endif
     NSString *content = [NSString stringWithFormat:@"&%@=%@&%@=%@&%@=%@&%@=%@&%@=%@&%@=%@&%@=%@&%@=%@&%@=%@",
                          PostKey1, userID,
-                         PostKey2, birthday,
+                         PostKey2, birthday==nil?@"":birthday,
                          PostKey3, sex,
                          PostKey4, [Common URLEncodedString:address],
                          PostKey5, [Common URLEncodedString:buildingType],
-                         PostKey6, [Common URLEncodedString:deviceID],
+                         PostKey6, [Common URLEncodedString:deviceID==nil?@"":deviceID],
                          PostKey7, deviceType,
                          PostKey8, pushFlg,
                          PostKey9, [Common URLEncodedString:rankID]];
@@ -55,11 +55,11 @@
                                              Operation:ClassifyKey
                                            PostContent:content
                                                   Post:@{PostKey1: userID,
-                                                         PostKey2: birthday,
+                                                         PostKey2: birthday==nil?@"":birthday,
                                                          PostKey3: sex,
                                                          PostKey4: address,
                                                          PostKey5: buildingType,
-                                                         PostKey6: deviceID,
+                                                         PostKey6: deviceID==nil?@"":deviceID,
                                                          PostKey7: deviceType,
                                                          PostKey8: pushFlg,
                                                          PostKey9: rankID}];
