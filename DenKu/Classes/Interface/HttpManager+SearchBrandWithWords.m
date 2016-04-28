@@ -15,6 +15,9 @@
 - (void)SearchBrandWithWords:(NSString *)keyWords And:(NSString *)rankID Finiehed:(void (^)(BOOL, int, NSString *msg, NSArray *))block
 {
     keyWords = @"recommend";
+    if (!rankID) {
+        rankID = @"";
+    }
     NSString *content = [NSString stringWithFormat:@"&%@=%@&%@=%@",
                          PostKey1, [Common URLEncodedString:keyWords],
                          PostKey2, rankID];

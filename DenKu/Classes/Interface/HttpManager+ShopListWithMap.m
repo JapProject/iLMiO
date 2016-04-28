@@ -18,6 +18,9 @@
 //    longitude = @"116.418893";
 //    latitude = @"40.059332";
 #endif
+    if (!rankID) {
+        rankID = @"";
+    }
     NSString *content = [NSString stringWithFormat:@"&%@=%@&%@=%@&%@=%@",
                          PostKey1, longitude, PostKey2, latitude, PostKey3, rankID];
     ASIFormDataRequest *request = [self getRequestWith:URL
