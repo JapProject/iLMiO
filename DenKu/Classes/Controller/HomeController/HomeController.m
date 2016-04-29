@@ -64,6 +64,7 @@
 {
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userRankIDChanged:) name:kUseRankIDChangeNotify object:nil];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     if ([[DataManager shareDataManager] isNeedShowGuide]) {
         float width = CGRectGetWidth(self.guideScrollView.frame);
