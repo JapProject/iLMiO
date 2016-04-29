@@ -535,7 +535,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="hxC-kd-mLZ">
-                                <rect key="frame" x="5" y="64" width="310" height="504"/>
+                                <rect key="frame" x="5" y="64" width="310" height="450"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="lyC-Tn-mrh">
@@ -669,7 +669,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="Aqx-ZS-ej5">
-                                <rect key="frame" x="0.0" y="0.0" width="340" height="679"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="BqO-Cy-IJA" customClass="HorseRaceLampView">
@@ -905,7 +905,7 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ShopListCell" textLabel="TMc-pO-rMV" detailTextLabel="WaU-Yt-VXQ" style="IBUITableViewCellStyleSubtitle" id="xfg-63-RSD">
-                                        <rect key="frame" x="0.0" y="122" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="186" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xfg-63-RSD" id="0Ox-6m-yZJ">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="59.5"/>
@@ -1241,7 +1241,7 @@
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BrandListCell" id="hzv-vu-leO" customClass="BrandListCell">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="100"/>
+                                        <rect key="frame" x="0.0" y="66" width="320" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hzv-vu-leO" id="aza-Yh-0zn">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="99.5"/>

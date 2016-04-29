@@ -89,7 +89,7 @@
     [self.classifyBgView removeFromSuperview];
     self.classifyBgView.parent = self.tabBarController.view;
     self.classifyBgView.frame = NHRectSetHeight(self.classifyBgView.frame, 0);
-    self.classifyBgView.targetFrame = CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64);
+    self.classifyBgView.targetFrame = CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64-50);
     [window addSubview:self.classifyBgView];
 
     [self reloadRecommendList];
