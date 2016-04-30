@@ -35,8 +35,8 @@
 
 @end
 
-#define URL                 @"http://153.121.37.86/index.php?"  //测试
-//#define URL                 @"http://www1099gk.sakura.ne.jp/index.php?" //正式
+//#define URL                 @"http://153.121.37.86/index.php?"  //测试
+#define URL                 @"http://www1099gk.sakura.ne.jp/index.php?" //正式
 #define SecretKey           @"thisisajapanesekey"
 
 #define HttpTest    0
