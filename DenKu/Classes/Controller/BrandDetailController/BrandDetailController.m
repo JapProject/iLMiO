@@ -69,6 +69,7 @@
 @implementation BrandDetailController
 
 
+
 - (IBAction)detailBrand:(id)sender {
     
     
@@ -77,10 +78,10 @@
     
     NSPredicate * predicate = [NSPredicate predicateWithFormat:@"iLMioCode == %d",[self.brandID intValue]];
     NSArray * array = [modelArray filteredArrayUsingPredicate:predicate];
-    if (array.count !=0) {
+    if ( array &&array.count !=0) {
         BrandsModel * model = [array firstObject];
         NSString * InteriorPlusCode = model.InteriorPlusCode;
-        NSString *urlString = [NSString stringWithFormat:@"https://dr.cir.io/ur/mJsLkA?brand_id=%@",InteriorPlusCode];
+        NSString *urlString = [NSString stringWithFormat:@"http://catalog.livingstyle.jp/apps/iLMiO/?brand_id=%@",InteriorPlusCode];
         NSURL *url = [NSURL URLWithString:urlString];
         [[UIApplication sharedApplication] openURL:url];
     }
@@ -147,7 +148,7 @@
     NSPredicate * predicate = [NSPredicate predicateWithFormat:@"iLMioCode == %d",[self.brandID intValue]];
     NSArray * array = [modelArray filteredArrayUsingPredicate:predicate];
     if (array.count !=0) {
-        self.BrandButton.hidden = YES;
+        self.BrandButton.hidden = NO;
     }else{
         self.BrandButton.hidden = YES;
     }
@@ -247,6 +248,9 @@
     else {
         self.contentScroll.contentSize = CGSizeMake(self.contentScroll.contentSize.width, nextY + (self.QRBtn.hidden ? 0 : self.view.frame.size.height - self.QRBtn.frame.origin.y));
     }
+    self.BrandButton.frame = CGRectMake(SCREEN_WIDTH-70, SCREEN_HEIGHT-70, 70, 70);
+    [self.view addSubview:self.BrandButton];
+    
     
 }
 

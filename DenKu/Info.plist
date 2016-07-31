@@ -32,6 +32,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>ilmioBrand</string>
+				<string>ilmio</string>
 			</array>
 		</dict>
 	</array>

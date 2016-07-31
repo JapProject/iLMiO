@@ -224,8 +224,18 @@ void UncaughtExceptionHandler(NSException *exception)
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+
 {
+    NSString * urlstring = [NSString stringWithFormat:@"%@",url];
+    NSRange range = [urlstring rangeOfString:kAppDetailUrl];
+    if (range.location != NSNotFound) {
+        NSString * brand_id = [urlstring substringFromIndex:range.location+kAppDetailUrl.length];
+        [[NSUserDefaults standardUserDefaults] setValue:brand_id forKey:kAppDetailBrand_id];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        [[NSNotificationCenter defaultCenter] postNotificationName:kAppJumpNoti object:nil];
+    }
     return YES;
+    
 }
 
 @end

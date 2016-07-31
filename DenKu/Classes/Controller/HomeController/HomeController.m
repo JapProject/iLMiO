@@ -64,6 +64,7 @@
 {
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userRankIDChanged:) name:kUseRankIDChangeNotify object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(jumpDetail) name:kAppJumpNoti object:nil];
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     if ([[DataManager shareDataManager] isNeedShowGuide]) {
@@ -99,6 +100,8 @@
     }
     
     
+   
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -109,6 +112,41 @@
         [self performSegueWithIdentifier:@"BrandDetail" sender:self.loginDetail];
         self.loginDetail = nil;
     }
+   
+    
+}
+
+-(void)jumpDetail{
+    //执行app被调用的
+    NSString * brand_id = [[NSUserDefaults standardUserDefaults] objectForKey:kAppDetailBrand_id];
+    if (brand_id) {
+        BrandDetail *detail = nil;
+        NSPredicate * predeicate = [NSPredicate predicateWithFormat:@"brandId == %@",brand_id];
+        NSArray * predeicateArray = [self.list filteredArrayUsingPredicate:predeicate];
+        if (predeicateArray && predeicateArray.count !=0) {
+            [[NSUserDefaults standardUserDefaults] setValue:nil forKey:kAppDetailBrand_id];
+            detail = predeicateArray[0];
+            if (detail.brandName) {
+                //如果没有登录弹出登录
+                [[DataManager shareDataManager] prepareMustData:^(){
+                    if ([[DataManager shareDataManager] isNeedRegister]) {
+                        [self performSegueWithIdentifier:@"GoAppLogin" sender:detail];
+                        
+                        
+                    }
+                    return;
+                }];
+                
+                
+            }
+            if (detail.brandName) {
+                [self performSegueWithIdentifier:@"BrandDetail" sender:detail];
+            }
+        }
+        
+        
+    }
+    
 }
 
 - (void)dealloc
